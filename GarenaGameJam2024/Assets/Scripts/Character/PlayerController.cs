@@ -76,7 +76,9 @@ public class PlayerController : MonoBehaviour
         {
             Rect rect = new Rect(200, 150, 200, 200);
 
-            string message = "isAttacking : " + player1Attack.isAttacking + "\n";
+            string message = "isAttacking : " + player1Attack.isAttacking + "\n" +
+                             "isFinishAttack : " + player1Attack.isFinishAttack + "\n";
+
 
             GUIStyle style = new GUIStyle();
             style.fontSize = 50;

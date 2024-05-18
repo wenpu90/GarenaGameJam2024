@@ -440,17 +440,17 @@ PrefabInstance:
     - target: {fileID: 4632553560318700978, guid: 987af6676ba416f43b565f9258f7b6f9,
         type: 3}
       propertyPath: showDebug
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4632553560623295305, guid: 987af6676ba416f43b565f9258f7b6f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.62
+      value: -6.37
       objectReference: {fileID: 0}
     - target: {fileID: 4632553560623295305, guid: 987af6676ba416f43b565f9258f7b6f9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.16
+      value: -1.92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 987af6676ba416f43b565f9258f7b6f9, type: 3}
