@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,5 +30,10 @@ public class GameManager : MonoBehaviour
         //{
         //    gameMenu.gameObject.SetActive(true);
         //}
+    }
+
+    internal void StartGame()
+    {
+        throw new NotImplementedException();
     }
 }

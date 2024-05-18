@@ -4,11 +4,17 @@ using UnityEngine.Events;
 
 public class MonsterManager : MonoBehaviour
 {
+    public static MonsterManager Instance { get; set; } 
     [SerializeField] Vector3 position;
     [SerializeField] GameObject monster1;
     [SerializeField] GameObject monster2;
     [SerializeField] RandomSpawn randomSpawn;
-    
+
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Start()
     {
         RandomSpawn();
