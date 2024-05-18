@@ -1,8 +1,8 @@
 using UnityEngine;
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rigid;
+    [SerializeField] private Rigidbody2D rigid;
 
     [Header("運動參數")]
     [SerializeField] private float moveSpeed = 5f;
@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private bool _isJumping = false; //正在跳躍(上升時)
     private bool _isGround = true;
     private float _tmpMove = 0;
-    private Vector3 _tmpVelocity;
+    private Vector2 _tmpVelocity;
 
-    public Vector3 Velocity => rigid.velocity;
+    public Vector2 Velocity => rigid.velocity;
 
     private void Start()
     {
-        rigid.useGravity = false;
+        rigid.gravityScale = 0;
     }
     public void Move(float move)
     {
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         rigid.velocity = _tmpVelocity;
 
         if (showDebug)
-            Debug.DrawRay(transform.position, Vector3.right * targetVelocity, Color.green);
+            Debug.DrawRay(transform.position, Vector2.right * targetVelocity, Color.green);
     }
 
     public void AirMove(float move)
@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
         _tmpVelocity.x = Mathf.MoveTowards(_tmpVelocity.x, targetVelocity, speedChange);
 
         rigid.velocity = _tmpVelocity;
-        rigid.velocity += Vector3.down * (gravity * Time.deltaTime);
+        rigid.velocity += Vector2.down * (gravity * Time.deltaTime);
     }
 
     public void Jump()
@@ -111,21 +111,20 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_isJumping) return;
         _isGround = false;
-
-        RaycastHit hitInfo;
-        var hit = Physics.Raycast(transform.position, Vector3.down, out hitInfo, groundCheckDistance, groundLayerMask);
-        if (hitInfo.collider != null)
+        
+        var hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayerMask);
+        if (hit.collider != null)
         {
             _isGround = true;
-            AttachGround(hitInfo.point);
+            AttachGround(hit.point);
         }
         if (showDebug)
-            Debug.DrawRay(hitInfo.point, hitInfo.normal, _isGround ? Color.blue : Color.yellow);
+            Debug.DrawRay(hit.point, hit.normal, _isGround ? Color.blue : Color.yellow);
     }
 
-    private void AttachGround(Vector3 hitPoint)
+    private void AttachGround(Vector2 hitPoint)
     {
-        rigid.position = hitPoint + footHeightOffset * Vector3.up;
+        rigid.position = hitPoint + footHeightOffset * Vector2.up;
     }
     private void OnGUI()
     {
