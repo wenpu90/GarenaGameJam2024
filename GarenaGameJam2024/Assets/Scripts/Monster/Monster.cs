@@ -42,4 +42,12 @@ public class Monster : MonoBehaviour
         MonsterManager.Instance.RandomSpawn();
         Destroy(gameObject);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            var player = collision.GetComponent<Player>();
+            if (player) player.TakeDamage(this.stat.attack);
+        }
+    }
 }

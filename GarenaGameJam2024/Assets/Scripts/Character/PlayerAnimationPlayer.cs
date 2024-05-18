@@ -23,8 +23,8 @@ public class PlayerAnimationPlayer : MonoBehaviour
     {
         animator.Play("Attack");
     }
-    public void PlayDeadAnimation()
+    public void PlayDieAnimation()
     {
-        animator.Play("Dead");
+        animator.Play("Die");
     }
 }
