@@ -10,14 +10,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] EnemyDetector player1EnemyDectector;
     [SerializeField] EnemyDetector player2EnemyDectector;
 
-    PlayerMovement player1Movement;
-    PlayerMovement player2Movement;
+    public PlayerMovement player1Movement;
+    public PlayerMovement player2Movement;
 
     PlayerAttack player1Attack;
     PlayerAttack player2Attack;
 
     PlayerAnimationPlayer player1Animation;
     PlayerAnimationPlayer player2Animation;
+
+    public bool p1StopMovement;
+    public bool p2StopMovement;
     private void Awake()
     {
         player1Movement = player1.GetComponent<PlayerMovement>();
@@ -41,37 +44,59 @@ public class PlayerController : MonoBehaviour
     }
     private void Movement()
     {
-        player1Movement.Move(input.Player1Axes);
-        player2Movement.Move(input.Player2Axes);
 
-        if (input.Player1Jump) player1Movement.Jump();
-        if (input.Player2Jump) player2Movement.Jump();
+        if (!p1StopMovement)
+        {
+            player1Movement.Move(input.Player1Axes);
+            if (input.Player1Jump) player1Movement.Jump();
+        }
+        if (!p2StopMovement)
+        {
+            player2Movement.Move(input.Player2Axes);
+            if (input.Player2Jump) player2Movement.Jump();
+        }
     }
+
     private void Attack()
     {
-        if (!player1Movement.isJumping && !player1Movement.isMoving)
-            if (player1Attack.isFinishAttack && player1EnemyDectector.isTrigger) player1Attack.Attack();
+        if (!p1StopMovement)
+        {
+            if (!player1Movement.isJumping && !player1Movement.isMoving)
+                if (player1Attack.isFinishAttack && player1EnemyDectector.isTrigger) player1Attack.Attack();
+        }
 
-        if (!player2Movement.isJumping && !player2Movement.isMoving)
-            if (player2Attack.isFinishAttack && player2EnemyDectector.isTrigger) player2Attack.Attack();
+        if (!p2StopMovement)
+        {
+            if (!player2Movement.isJumping && !player2Movement.isMoving)
+                if (player2Attack.isFinishAttack && player2EnemyDectector.isTrigger) player2Attack.Attack();
+        }
+  
     }
 
     private void Animation()
     {
-        if (player1Movement.isJumping) player1Animation.PlayJumpAnimation();
-        else if (!player1Movement.isGround) player1Animation.PlayFallAnimation();
-        else if (player1Movement.isMoving) player1Animation.PlayRunAnimation();
-        else if (player1Attack.isAttacking && !player1Attack.isFinishAttack) player1Animation.PlayAttackAnimation();
-        else player1Animation.PlayIdleAnimation();
+        if (!p1StopMovement)
+        {
+            if (player1Movement.isJumping) player1Animation.PlayJumpAnimation();
+            else if (!player1Movement.isGround) player1Animation.PlayFallAnimation();
+            else if (player1Movement.isMoving) player1Animation.PlayRunAnimation();
+            else if (player1Attack.isAttacking && !player1Attack.isFinishAttack) player1Animation.PlayAttackAnimation();
+            else player1Animation.PlayIdleAnimation();
+        }
 
-        if (player2Movement.isJumping) player2Animation.PlayJumpAnimation();
-        else if (!player2Movement.isGround) player2Animation.PlayFallAnimation();
-        else if (player2Movement.isMoving) player2Animation.PlayRunAnimation();
-        else if (player2Attack.isAttacking && !player2Attack.isFinishAttack) player2Animation.PlayAttackAnimation(); 
-        else player2Animation.PlayIdleAnimation();
+        if (!p2StopMovement)
+        {
+            if (player2Movement.isJumping) player2Animation.PlayJumpAnimation();
+            else if (!player2Movement.isGround) player2Animation.PlayFallAnimation();
+            else if (player2Movement.isMoving) player2Animation.PlayRunAnimation();
+            else if (player2Attack.isAttacking && !player2Attack.isFinishAttack) player2Animation.PlayAttackAnimation();
+            else player2Animation.PlayIdleAnimation();
+        }
+
     }
     private void OnGUI()
     {
+        return;
         if (showDebug)
         {
             Rect rect = new Rect(200, 150, 200, 200);

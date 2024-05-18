@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class Element : MonoBehaviour
 {
-    public enum ElementType { Fire, Water, Wood }
+    public enum ElementType { Fire, Water, Wood, Normal }
     public ElementType elementType;
     public int elementPoint;
     public List<GameObject> orbs = new List<GameObject>();

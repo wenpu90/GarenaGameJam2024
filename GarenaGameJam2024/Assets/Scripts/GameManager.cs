@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameMenu gameMenu;
     public Tutorial tutorial;
     public Gameplay gameplay;
+    public BossGamePlay bossGamePlay;
 
     void Awake()
     {
@@ -26,14 +27,19 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
 
-        //if (Input.GetKeyDown(KeyCode.F1))
-        //{
-        //    gameMenu.gameObject.SetActive(true);
-        //}
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            StartBossFight();
+        }
     }
 
-    internal void StartGame()
+    public void StartGame()
     {
-        throw new NotImplementedException();
+        gameplay.gameObject.SetActive(true);
+    }
+
+    public void StartBossFight()
+    {
+        bossGamePlay.gameObject.SetActive(true);
     }
 }

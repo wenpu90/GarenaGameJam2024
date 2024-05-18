@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _tmpVelocity;
 
     public Vector2 Velocity => rigid.velocity;
+    public bool stopMovement = false;
 
     private void Start()
     {
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (stopMovement) return;
         CheckGround();
         DoJump();
         Flip();
