@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] bool showDebug;
     [SerializeField] PlayerInput input;
     [SerializeField] GameObject player1;
     [SerializeField] GameObject player2;
+
+    [SerializeField] EnemyDetector player1EnemyDectector;
+    [SerializeField] EnemyDetector player2EnemyDectector;
 
     PlayerMovement player1Movement;
     PlayerMovement player2Movement;
@@ -45,21 +49,39 @@ public class PlayerController : MonoBehaviour
     }
     private void Attack()
     {
-        if (player1Attack.isFinishAttack) player1Attack.Attack();
-        if (player2Attack.isFinishAttack) player2Attack.Attack();
+        if (player1Attack.isFinishAttack && player1EnemyDectector.isTrigger) player1Attack.Attack();
+        if (player2Attack.isFinishAttack && player2EnemyDectector.isTrigger) player2Attack.Attack();
     }
+
     private void Animation()
     {
         if (player1Movement.isJumping) player1Animation.PlayJumpAnimation();
         else if (!player1Movement.isGround) player1Animation.PlayFallAnimation();
         else if (player1Movement.isMoving) player1Animation.PlayRunAnimation();
-        else if (!player1Attack.isFinishAttack) player1Animation.PlayAttackAnimation();
+        else if (player1Attack.isAttacking) player1Animation.PlayAttackAnimation();
         else player1Animation.PlayIdleAnimation();
 
         if (player2Movement.isJumping) player2Animation.PlayJumpAnimation();
         else if (!player2Movement.isGround) player2Animation.PlayFallAnimation();
         else if (player2Movement.isMoving) player2Animation.PlayRunAnimation();
-        else if (!player2Attack.isFinishAttack) player2Animation.PlayAttackAnimation();
+        else if (player2Attack.isAttacking) player2Animation.PlayAttackAnimation(); 
         else player2Animation.PlayIdleAnimation();
+    }
+    private void OnGUI()
+    {
+        if (showDebug)
+        {
+            Rect rect = new Rect(200, 150, 200, 200);
+
+            string message = "isAttacking : " + player1Attack.isAttacking + "\n";
+
+            GUIStyle style = new GUIStyle();
+            style.fontSize = 50;
+            style.fontStyle = FontStyle.Bold;
+            style.normal.textColor = Color.white;
+
+            GUI.Label(rect, message, style);
+
+        }
     }
 }

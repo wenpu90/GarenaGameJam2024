@@ -9,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField] Collider2D Hitbox;
     public bool isFinishAttack { get; private set; } = true;
+    public bool isAttacking { get; private set; }
     [SerializeField] float activeTime;
     [SerializeField] float cooldownTime;
     [SerializeField] private GameObject bullet;
@@ -48,6 +49,7 @@ public class PlayerAttack : MonoBehaviour
     }
     public async void ActiveAttack()
     {
+        isAttacking = true;
         if (playerRole == 0)
         {
             isFinishAttack = false;
@@ -64,6 +66,7 @@ public class PlayerAttack : MonoBehaviour
             await UniTask.Delay((int)(activeTime * 1000));
             BackToPool(bullet);
         }
+        isAttacking = false;
     }
     public async void Cooldown()
     {
