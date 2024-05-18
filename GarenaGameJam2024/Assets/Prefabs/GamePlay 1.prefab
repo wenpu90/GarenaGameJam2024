@@ -730,9 +730,9 @@ MonoBehaviour:
   rigid: {fileID: 4632553560934932652}
   player: {fileID: 4632553560934932647}
   maxAccelecration: 50
-  jumpForce: 10
+  jumpForce: 15
   airControl: 0.5
-  gravity: 9.8
+  gravity: 50
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -995,9 +995,9 @@ MonoBehaviour:
   rigid: {fileID: 7811224811403641450}
   player: {fileID: 524672326960664702}
   maxAccelecration: 50
-  jumpForce: 10
+  jumpForce: 15
   airControl: 0.5
-  gravity: 9.8
+  gravity: 50
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
