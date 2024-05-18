@@ -1,8 +1,10 @@
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class PlayerInput : MonoBehaviour
 {
-    private PlayerInputActions playerInputActions;
+    [ShowInInspector]
+    public PlayerInputActions playerInputActions;
 
     public float Player1Axes => playerInputActions.Player1.Axes.ReadValue<float>();
     public bool isPlayer1Moving => Player1Axes != 0f;

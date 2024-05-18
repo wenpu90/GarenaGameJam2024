@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Stat
 {
-    public float fire; // attack
-    public float water; // movement speed
-    public float wood; // health
+    public float attack;
+    public float health;
+    public float movementSpeed;
 }
