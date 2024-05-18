@@ -1,32 +1,17 @@
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Cysharp.Threading.Tasks;
-using System.Collections.Generic;
 
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] int playerRole;
 
     [SerializeField] Collider2D Hitbox;
+    public BulletsPool bulletPool;
     public bool isFinishAttack { get; private set; } = true;
     public bool isAttacking { get; private set; }
     [SerializeField] float activeTime;
     [SerializeField] float cooldownTime;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private GameObject bulletPool;
-    [SerializeField] private int initailSize = 5;
-
-    private List<GameObject> availableObjects = new List<GameObject>();
-
-    private void Awake()
-    {
-        for (int i = 0; i < initailSize; i++)
-        {
-            GameObject go = Instantiate<GameObject>(bullet, this.transform.position + Vector3.right + Vector3.up, Quaternion.identity, bulletPool.transform);
-            availableObjects.Add(go);
-            go.SetActive(false);
-        }
-    }
 
     [Button]
     public void Attack()
@@ -61,10 +46,10 @@ public class PlayerAttack : MonoBehaviour
         else if (playerRole == 1)
         {
             isFinishAttack = false;
-            var bullet = GetPooledInstance(bulletPool.transform);
+            var bullet = bulletPool.GetPooledInstance(bulletPool.transform);
 
             await UniTask.Delay((int)(activeTime * 1000));
-            BackToPool(bullet);
+            bulletPool.BackToPool(bullet);
         }
         isAttacking = false;
     }
@@ -79,39 +64,6 @@ public class PlayerAttack : MonoBehaviour
         {
             await UniTask.Delay((int)(cooldownTime * 1000));
             isFinishAttack = true;
-        }
-    }
-    public GameObject GetPooledInstance(Transform parent)
-    {
-        lock (availableObjects)
-        {
-            GameObject go;
-            int lastIndex = availableObjects.Count - 1;
-            if (lastIndex >= 0)
-            {
-                go = availableObjects[lastIndex];
-                availableObjects.RemoveAt(lastIndex);
-                go.SetActive(true);
-                if (go.transform.parent != parent)
-                {
-                    go.transform.SetParent(parent);
-                }
-            }
-            else
-            {
-                go = Instantiate<GameObject>(bullet, parent);
-            }
-            go.transform.position = this.transform.position + Vector3.right + Vector3.up;
-            return go;
-        }
-        
-    }
-    public void BackToPool(GameObject go)
-    {
-        lock (availableObjects)
-        {
-            availableObjects.Add(go);
-            go.SetActive(false);
         }
     }
 }
