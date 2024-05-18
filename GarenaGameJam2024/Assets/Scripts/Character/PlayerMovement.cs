@@ -1,13 +1,14 @@
-using UnityEditor.Tilemaps;
 using UnityEngine;
-using UnityEngine.EventSystems;
+
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rigid;
 
+    [SerializeField] Player player;
+
+    [SerializeField] private float moveSpeed => player.stat.movementSpeed;
     [Header("笲笆把计")]
-    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float maxAccelecration = 50f; //程硉
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float airControl = .5f; //い北

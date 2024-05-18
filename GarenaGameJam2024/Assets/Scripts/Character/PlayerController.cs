@@ -49,8 +49,11 @@ public class PlayerController : MonoBehaviour
     }
     private void Attack()
     {
-        if (player1Attack.isFinishAttack && player1EnemyDectector.isTrigger) player1Attack.Attack();
-        if (player2Attack.isFinishAttack && player2EnemyDectector.isTrigger) player2Attack.Attack();
+        if (!player1Movement.isJumping && !player1Movement.isMoving) 
+            if (player1Attack.isFinishAttack && player1EnemyDectector.isTrigger) player1Attack.Attack();
+
+        if (!player2Movement.isJumping && !player2Movement.isMoving)
+            if (player2Attack.isFinishAttack && player2EnemyDectector.isTrigger) player2Attack.Attack();
     }
 
     private void Animation()
