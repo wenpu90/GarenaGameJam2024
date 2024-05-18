@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 364e3744f823c5743870462f7cc0a3fe
+guid: f79af3b9c5f65b54bab34ce41fa36541
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_0
+      name: gameJam_char-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 245
-        width: 63
-        height: 49
+        y: 358
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,20 +107,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7409ee566d043334687e329ff1f12def
-      internalID: -680476868
+      spriteID: c24d471a1a5412a47baf9fa2cf0c21b9
+      internalID: -157717110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_1
+      name: gameJam_char-Sheet_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 245
-        width: 63
-        height: 49
+        x: 78
+        y: 358
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dee3c3e0fec47fc4b8edc761449b3e41
-      internalID: 1900011941
+      spriteID: b2a4e4c9c069eba4196190dbc098bc48
+      internalID: 235060306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_2
+      name: gameJam_char-Sheet_2
       rect:
         serializedVersion: 2
-        x: 126
-        y: 245
-        width: 63
-        height: 49
+        x: 156
+        y: 358
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6288131b1949449b1eda3cd116624d
-      internalID: 870670031
+      spriteID: 892a61ce7e8eb1a498a73a6a46807d6a
+      internalID: -1266309002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_3
+      name: gameJam_char-Sheet_3
       rect:
         serializedVersion: 2
-        x: 189
-        y: 245
-        width: 63
-        height: 49
+        x: 234
+        y: 358
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,188 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 815a6dddbec160041a986d208f7391b2
-      internalID: -2109894810
+      spriteID: 660efe330d1334d4bb0fb8756a245d31
+      internalID: -226124129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a682bfd722dd884cbf47c5a602ccfe5
-      internalID: -520950624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_5
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38baf171d76a0674bab273ddc1a64572
-      internalID: 1869852281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_6
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dd1e00c088b1d34a82251781fd47d63
-      internalID: -1034565277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_7
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd6745ccd11fe2e42b244512c8dea310
-      internalID: 1423978530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_8
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14db5eedfa5ce38419b932c417170c08
-      internalID: 1192425630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_9
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77e8f081dd390074e8e3967ff7a4204e
-      internalID: -2078250769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_10
-      rect:
-        serializedVersion: 2
-        x: 378
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b770177d0853704cbc64e228949d1e0
-      internalID: -191881543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_11
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 196
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aecdabfecfcc26c4ab980d9180061116
-      internalID: -1126436348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_12
+      name: gameJam_char-Sheet_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 147
-        width: 63
-        height: 49
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ecfd3fe23c726141b2c54702f01b908
-      internalID: 651477963
+      spriteID: 3c2b171530e32f047bfb8d82b123b6af
+      internalID: -1859622692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_13
+      name: gameJam_char-Sheet_5
       rect:
         serializedVersion: 2
-        x: 63
-        y: 147
-        width: 63
-        height: 49
+        x: 78
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed3d3fb75a33aac4a87c25afbbaad853
-      internalID: -1273814254
+      spriteID: 590f06e8076752845b3c8e2fdad01921
+      internalID: 1914635093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_14
+      name: gameJam_char-Sheet_6
       rect:
         serializedVersion: 2
-        x: 126
-        y: 147
-        width: 63
-        height: 49
+        x: 156
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5892039ac8be07742862f60bb7af1599
-      internalID: -1240090988
+      spriteID: 9a1ae895c5b3aa346ab89d932b2475d7
+      internalID: -540684475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_15
+      name: gameJam_char-Sheet_7
       rect:
         serializedVersion: 2
-        x: 189
-        y: 147
-        width: 63
-        height: 49
+        x: 234
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,20 +254,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77f2ee5a7fec8ab45a22cbb8a4b8c242
-      internalID: 1996655391
+      spriteID: 55171ac49ee2a034583e700dee69383d
+      internalID: -2121939497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_16
+      name: gameJam_char-Sheet_8
       rect:
         serializedVersion: 2
-        x: 252
-        y: 147
-        width: 63
-        height: 49
+        x: 312
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,20 +275,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e7c7d4c036e9b42a7623bc67217803
-      internalID: 1151986398
+      spriteID: 7c795664bba2afb48b966de3c4762f2b
+      internalID: 2724724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_17
+      name: gameJam_char-Sheet_9
       rect:
         serializedVersion: 2
-        x: 315
-        y: 147
-        width: 63
-        height: 49
+        x: 390
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee6efb3ecf233d7458359c1a7dc43edf
-      internalID: -2135542932
+      spriteID: 8c1c3980c50bbe34ba9fb63515a74df0
+      internalID: 1366289362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_18
+      name: gameJam_char-Sheet_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 98
-        width: 63
-        height: 49
+        x: 468
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,20 +317,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0294fca5a80ad8f4bafb0003cfe55d65
-      internalID: -1976018295
+      spriteID: 2b14ac8c01d647342ba838bbca481169
+      internalID: 1546016204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_19
+      name: gameJam_char-Sheet_11
       rect:
         serializedVersion: 2
-        x: 63
-        y: 98
-        width: 63
-        height: 49
+        x: 546
+        y: 299
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,62 +338,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f78fb353d15f104cbe58e2785c7f31c
-      internalID: 1070852563
+      spriteID: 70768bd9fc1fec04d9f8866fb57c1216
+      internalID: 1980632606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_20
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 49
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a771f992631f23747ae721ffd5c6577c
-      internalID: -433424214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_21
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 49
-        width: 63
-        height: 49
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b296cc6948015c43869c75e65b5d364
-      internalID: 79140581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gameJam_char-Sheet 1_22
+      name: gameJam_char-Sheet_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 63
-        height: 49
+        y: 240
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,20 +359,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd30889309ddd504887ce06b6cf486a5
-      internalID: 1571727589
+      spriteID: 5f393e77347d22a47bbdf91ef61c327b
+      internalID: -1296123274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_23
+      name: gameJam_char-Sheet_13
       rect:
         serializedVersion: 2
-        x: 63
-        y: 0
-        width: 63
-        height: 49
+        x: 78
+        y: 240
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -590,20 +380,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 647e74d67d13dd74c99ae1c90cc04490
-      internalID: 387184261
+      spriteID: 4fccd10daaa7c754ead1f7212bba39b4
+      internalID: 2130466634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_24
+      name: gameJam_char-Sheet_14
       rect:
         serializedVersion: 2
-        x: 126
-        y: 0
-        width: 63
-        height: 49
+        x: 156
+        y: 240
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -611,20 +401,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a29ffa38dd5a7cd4bae93cbde35ecc64
-      internalID: -1962528826
+      spriteID: 10ea9d1e195ff214597ee5b21b566626
+      internalID: 1444805012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gameJam_char-Sheet 1_25
+      name: gameJam_char-Sheet_15
       rect:
         serializedVersion: 2
-        x: 189
-        y: 0
-        width: 63
-        height: 49
+        x: 234
+        y: 240
+        width: 78
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -632,8 +422,365 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34dda06daed288a4889137ba7471e1d3
-      internalID: 1645009642
+      spriteID: c5f3feb782329f544b845f23e99f1fbd
+      internalID: 1514721182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 240
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a35c0e3ca124343ac26a6287641534
+      internalID: 2024873467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 240
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a276ea68012a9544c98b43734afb4210
+      internalID: 1386213050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 181
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8dc1bfd60754a44933457494478f94
+      internalID: -629270212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 181
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81942442adc19e449a420edbb94e28fe
+      internalID: -867136596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919916671c6ce324ebd8253a9497feea
+      internalID: -1424438965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 122
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c284464cb88f4cb4fa48b31158f34655
+      internalID: 43304337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f00daee1d59b14690f2289fc2ce184
+      internalID: -1815222673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 63
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796b9db55977d2949adae221a9c9a7e2
+      internalID: 1724205017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 63
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bf6f80669f830499294f87be7f51b7
+      internalID: -47779195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 63
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcf3f3410f976e4f928d70b9d816163
+      internalID: 217559010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e06eb71b96dac64182f89e2a658c2b3
+      internalID: -2042723430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 4
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec8d5154fdb2f844a1d0d653f51c7eb
+      internalID: 754235987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 4
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7636b0d4f79ed864288431c44ef1e01c
+      internalID: 1014036250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 4
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9a3dfc41a590e41ba22303f1065449
+      internalID: 2071754444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 4
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add9fe9a67567cc4692d9ac3622a991d
+      internalID: 1414607548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 4
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc114ae6e27c1024aae98fe43d940bcf
+      internalID: 184314670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameJam_char-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 4
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9d4155ce83186409c4be871b1a397e
+      internalID: -1398418564
       vertices: []
       indices: 
       edges: []
@@ -641,7 +788,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 04cf7bc8f89808749a0458155b628e8a
     internalID: 0
     vertices: []
     indices: 
@@ -649,32 +796,39 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gameJam_char-Sheet 1_0: -680476868
-      gameJam_char-Sheet 1_1: 1900011941
-      gameJam_char-Sheet 1_10: -191881543
-      gameJam_char-Sheet 1_11: -1126436348
-      gameJam_char-Sheet 1_12: 651477963
-      gameJam_char-Sheet 1_13: -1273814254
-      gameJam_char-Sheet 1_14: -1240090988
-      gameJam_char-Sheet 1_15: 1996655391
-      gameJam_char-Sheet 1_16: 1151986398
-      gameJam_char-Sheet 1_17: -2135542932
-      gameJam_char-Sheet 1_18: -1976018295
-      gameJam_char-Sheet 1_19: 1070852563
-      gameJam_char-Sheet 1_2: 870670031
-      gameJam_char-Sheet 1_20: -433424214
-      gameJam_char-Sheet 1_21: 79140581
-      gameJam_char-Sheet 1_22: 1571727589
-      gameJam_char-Sheet 1_23: 387184261
-      gameJam_char-Sheet 1_24: -1962528826
-      gameJam_char-Sheet 1_25: 1645009642
-      gameJam_char-Sheet 1_3: -2109894810
-      gameJam_char-Sheet 1_4: -520950624
-      gameJam_char-Sheet 1_5: 1869852281
-      gameJam_char-Sheet 1_6: -1034565277
-      gameJam_char-Sheet 1_7: 1423978530
-      gameJam_char-Sheet 1_8: 1192425630
-      gameJam_char-Sheet 1_9: -2078250769
+      gameJam_char-Sheet_0: -157717110
+      gameJam_char-Sheet_1: 235060306
+      gameJam_char-Sheet_10: 1546016204
+      gameJam_char-Sheet_11: 1980632606
+      gameJam_char-Sheet_12: -1296123274
+      gameJam_char-Sheet_13: 2130466634
+      gameJam_char-Sheet_14: 1444805012
+      gameJam_char-Sheet_15: 1514721182
+      gameJam_char-Sheet_16: 2024873467
+      gameJam_char-Sheet_17: 1386213050
+      gameJam_char-Sheet_18: -629270212
+      gameJam_char-Sheet_19: -867136596
+      gameJam_char-Sheet_2: -1266309002
+      gameJam_char-Sheet_20: -1424438965
+      gameJam_char-Sheet_21: 43304337
+      gameJam_char-Sheet_22: -1815222673
+      gameJam_char-Sheet_23: 1724205017
+      gameJam_char-Sheet_24: -47779195
+      gameJam_char-Sheet_25: 217559010
+      gameJam_char-Sheet_26: -2042723430
+      gameJam_char-Sheet_27: 754235987
+      gameJam_char-Sheet_28: 1014036250
+      gameJam_char-Sheet_29: 2071754444
+      gameJam_char-Sheet_3: -226124129
+      gameJam_char-Sheet_30: 1414607548
+      gameJam_char-Sheet_31: 184314670
+      gameJam_char-Sheet_32: -1398418564
+      gameJam_char-Sheet_4: -1859622692
+      gameJam_char-Sheet_5: 1914635093
+      gameJam_char-Sheet_6: -540684475
+      gameJam_char-Sheet_7: -2121939497
+      gameJam_char-Sheet_8: 2724724
+      gameJam_char-Sheet_9: 1366289362
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
