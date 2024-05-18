@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
 
     PlayerAttack player1Attack;
     PlayerAttack player2Attack;
+
+    PlayerAnimationPlayer player1Animation;
+    PlayerAnimationPlayer player2Animation;
     private void Awake()
     {
         player1Movement = player1.GetComponent<PlayerMovement>();
@@ -18,6 +21,9 @@ public class PlayerController : MonoBehaviour
 
         player1Attack = player1.GetComponent<PlayerAttack>();
         player2Attack = player2.GetComponent<PlayerAttack>();
+
+        player1Animation = player1.GetComponent<PlayerAnimationPlayer>();
+        player2Animation = player2.GetComponent<PlayerAnimationPlayer>();
     }
     private void Start()
     {
@@ -25,13 +31,33 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
+        Movement();
+        Attack();
+        Animation();
+    }
+    private void Movement()
+    {
         player1Movement.Move(input.Player1Axes);
         player2Movement.Move(input.Player2Axes);
 
         if (input.Player1Jump) player1Movement.Jump();
         if (input.Player2Jump) player2Movement.Jump();
-
+    }
+    private void Attack()
+    {
         if (player1Attack.isFinishAttack) player1Attack.Attack();
         if (player2Attack.isFinishAttack) player2Attack.Attack();
+    }
+    private void Animation()
+    {
+        if (player1Movement.isMoving) player1Animation.PlayRunAnimation();
+        else if (player1Movement.isJumping) player1Animation.PlayJumpAnimation();
+        else if (input.Player1Attack) player1Animation.PlayAttackAnimation();
+        else player1Animation.PlayIdleAnimation();
+
+        if (player2Movement.isMoving) player2Animation.PlayRunAnimation();
+        else if (player2Movement.isJumping) player2Animation.PlayJumpAnimation();
+        else if (input.Player2Attack) player2Animation.PlayAttackAnimation();
+        else player2Animation.PlayIdleAnimation();
     }
 }

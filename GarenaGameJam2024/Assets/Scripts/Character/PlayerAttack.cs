@@ -21,7 +21,7 @@ public class PlayerAttack : MonoBehaviour
     {
         for (int i = 0; i < initailSize; i++)
         {
-            GameObject go = Instantiate<GameObject>(bullet, this.transform.position + Vector3.right, Quaternion.identity, bulletPool.transform);
+            GameObject go = Instantiate<GameObject>(bullet, this.transform.position + Vector3.right + Vector3.up, Quaternion.identity, bulletPool.transform);
             availableObjects.Add(go);
             go.SetActive(false);
         }
@@ -98,7 +98,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 go = Instantiate<GameObject>(bullet, parent);
             }
-            go.transform.position = this.transform.position + Vector3.right;
+            go.transform.position = this.transform.position + Vector3.right + Vector3.up;
             return go;
         }
         

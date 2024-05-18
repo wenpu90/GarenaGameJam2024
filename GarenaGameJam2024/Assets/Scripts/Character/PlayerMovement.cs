@@ -1,4 +1,6 @@
+using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.EventSystems;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,8 +19,10 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private bool showDebug = true;
 
-    private bool _isJumping = false; //正在跳躍(上升時)
-    private bool _isGround = true;
+    private int moveDirection;
+    public bool isJumping = false; //正在跳躍(上升時)
+    public bool isGround = true;
+    public bool isMoving => _tmpMove != 0;
     private float _tmpMove = 0;
     private Vector2 _tmpVelocity;
 
@@ -37,8 +41,9 @@ public class PlayerMovement : MonoBehaviour
     {
         CheckGround();
         DoJump();
+        Flip();
 
-        if (_isGround)
+        if (isGround)
         {
             var tmpVelocity = rigid.velocity;
             tmpVelocity.y = 0;
@@ -50,12 +55,16 @@ public class PlayerMovement : MonoBehaviour
             AirMove(_tmpMove);
         }
     }
+    private void Flip()
+    {
+        this.transform.localScale = moveDirection == 0 ? this.transform.localScale : new Vector3(moveDirection, 1, 1);
+    }
 
     public void GroundMove(float move)
     {
         _tmpVelocity = rigid.velocity;
 
-        var moveDirection = Mathf.Sign(move) > 0 ? 1 : -1;
+        moveDirection = Mathf.Sign(move) > 0 ? 1 : -1;
         if (move == 0)
             moveDirection = 0;
 
@@ -73,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _tmpVelocity = rigid.velocity;
 
-        var moveDirection = Mathf.Sign(move) > 0 ? 1 : -1;
+        moveDirection = Mathf.Sign(move) > 0 ? 1 : -1;
         if (move == 0)
             moveDirection = 0;
 
@@ -88,14 +97,14 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        _isJumping = true;
+        isJumping = true;
     }
     private void DoJump()
     {
-        if (!_isJumping) return;
-        if (_isGround)
+        if (!isJumping) return;
+        if (isGround)
         {
-            _isGround = false;
+            isGround = false;
             var jumpF = rigid.velocity;
             jumpF.y += jumpForce;
             rigid.velocity = jumpF;
@@ -103,23 +112,23 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             if (rigid.velocity.y < jumpForce * .5f) 
-                _isJumping = false;
+                isJumping = false;
         }
     }
 
     private void CheckGround()
     {
-        if (_isJumping) return;
-        _isGround = false;
+        if (isJumping) return;
+        isGround = false;
         
         var hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayerMask);
         if (hit.collider != null)
         {
-            _isGround = true;
+            isGround = true;
             AttachGround(hit.point);
         }
         if (showDebug)
-            Debug.DrawRay(hit.point, hit.normal, _isGround ? Color.blue : Color.yellow);
+            Debug.DrawRay(hit.point, hit.normal, isGround ? Color.blue : Color.yellow);
     }
 
     private void AttachGround(Vector2 hitPoint)
@@ -132,8 +141,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Rect rect = new Rect(200, 150, 200, 200);
 
-            string message = "_isGround : " + _isGround + "\n" +
-                                "_isJumping" + _isJumping + "\n";
+            string message = "_isGround : " + isGround + "\n" +
+                                "_isJumping" + isJumping + "\n";
 
             GUIStyle style = new GUIStyle();
             style.fontSize = 50;
