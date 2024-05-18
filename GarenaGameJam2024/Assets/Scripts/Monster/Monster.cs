@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem.Processors;
 using System;
 using Sirenix.OdinInspector;
 
@@ -8,6 +7,7 @@ public class Monster : MonoBehaviour
     public Element.ElementType elementType;
     public Stat stat;
     public Action<Monster> OnDeadEvent = delegate { };
+    [SerializeField] MonsterManager manager;
 
     [Button]
     public void TakeDamage(float damage)
@@ -21,6 +21,7 @@ public class Monster : MonoBehaviour
     public void Die()
     {
         OnDeadEvent?.Invoke(this);
+        manager.RandomSpawn();
         Destroy(gameObject);
     }
 }

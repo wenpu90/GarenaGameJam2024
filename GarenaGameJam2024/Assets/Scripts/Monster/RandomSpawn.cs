@@ -8,7 +8,6 @@ public class RandomSpawn : MonoBehaviour
     public int GetRandomIndex()
     {
         int x = Random.Range(0, spawnPlaces.Count);
-        Debug.Log(spawnPlaces[x]);
         return x;
     }
     public Vector3 GetPosition(int x)

@@ -227,6 +227,7 @@ MonoBehaviour:
     attack: 0
     health: 0
     movementSpeed: 0
+  manager: {fileID: 0}
 --- !u!114 &2353570265157447971
 MonoBehaviour:
   m_ObjectHideFlags: 0
