@@ -58,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Flip()
     {
-        this.transform.localScale = moveDirection == 0 ? this.transform.localScale : new Vector3(moveDirection, 1, 1);
+        var faceDirection = moveDirection > 0 ? 1 * this.transform.localScale.x : -1 * this.transform.localScale.x;
+        this.transform.localScale = moveDirection == 0 ? this.transform.localScale : new Vector3(moveDirection, this.transform.localScale.y, this.transform.localScale.z);
     }
 
     public void GroundMove(float move)
