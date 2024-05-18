@@ -377,6 +377,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 649697103990573110, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967842171492492759, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967842171492492759, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967842171492492759, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2416292286473999319, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2416292286473999319, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.99
+      objectReference: {fileID: 0}
     - target: {fileID: 4632553559675348110, guid: 987af6676ba416f43b565f9258f7b6f9,
         type: 3}
       propertyPath: m_Name
@@ -451,6 +481,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939697280364368956, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939697280364368956, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 987af6676ba416f43b565f9258f7b6f9, type: 3}
