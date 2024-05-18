@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    public int hp;
+    public Stat stat;
+
 
 }

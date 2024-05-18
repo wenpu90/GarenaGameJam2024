@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerInput input;
     [SerializeField] PlayerMovement player1Movement;
     [SerializeField] PlayerMovement player2Movement;
-    private void Awake()
+    private void Start()
     {
         input.EnablePlayerInput();
     }
