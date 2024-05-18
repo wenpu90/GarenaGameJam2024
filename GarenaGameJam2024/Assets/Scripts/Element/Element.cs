@@ -15,6 +15,7 @@ public class Element : MonoBehaviour
     public BoxCollider2D boxCollider2D;
     public bool isOnFloor = false;
     public float dropForce = 1f;
+    
     private void Start()
     {
         rigidbody2D.AddForce(Vector2.up * dropForce);
