@@ -21,4 +21,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void Update()
+    {
+
+        //if (Input.GetKeyDown(KeyCode.F1))
+        //{
+        //    gameMenu.gameObject.SetActive(true);
+        //}
+    }
 }
