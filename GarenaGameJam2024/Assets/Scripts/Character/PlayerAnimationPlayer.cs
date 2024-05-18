@@ -15,6 +15,10 @@ public class PlayerAnimationPlayer : MonoBehaviour
     {
         animator.Play("Jump");
     }
+    public void PlayFallAnimation()
+    {
+        animator.Play("Fall");
+    }
     public void PlayAttackAnimation()
     {
         animator.Play("Attack");

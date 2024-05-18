@@ -50,14 +50,16 @@ public class PlayerController : MonoBehaviour
     }
     private void Animation()
     {
-        if (player1Movement.isMoving) player1Animation.PlayRunAnimation();
-        else if (player1Movement.isJumping) player1Animation.PlayJumpAnimation();
-        else if (input.Player1Attack) player1Animation.PlayAttackAnimation();
+        if (player1Movement.isJumping) player1Animation.PlayJumpAnimation();
+        else if (!player1Movement.isGround) player1Animation.PlayFallAnimation();
+        else if (player1Movement.isMoving) player1Animation.PlayRunAnimation();
+        else if (!player1Attack.isFinishAttack) player1Animation.PlayAttackAnimation();
         else player1Animation.PlayIdleAnimation();
 
-        if (player2Movement.isMoving) player2Animation.PlayRunAnimation();
-        else if (player2Movement.isJumping) player2Animation.PlayJumpAnimation();
-        else if (input.Player2Attack) player2Animation.PlayAttackAnimation();
+        if (player2Movement.isJumping) player2Animation.PlayJumpAnimation();
+        else if (!player2Movement.isGround) player2Animation.PlayFallAnimation();
+        else if (player2Movement.isMoving) player2Animation.PlayRunAnimation();
+        else if (!player2Attack.isFinishAttack) player2Animation.PlayAttackAnimation();
         else player2Animation.PlayIdleAnimation();
     }
 }
