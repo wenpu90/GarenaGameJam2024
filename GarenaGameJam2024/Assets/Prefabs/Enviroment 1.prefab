@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 752905752608515073}
   - component: {fileID: 935079789891204218}
   - component: {fileID: 5390466198116049655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 6229826909019817196}
   - component: {fileID: 4595525737662063515}
   - component: {fileID: 4670638469211040709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 3610215612006111531}
   - component: {fileID: 5906270571486004593}
   - component: {fileID: 1440135395636601049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 4100343523400305977}
   - component: {fileID: 6490876399930507332}
   - component: {fileID: 1221549013674256377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 3395142401328729203}
   - component: {fileID: 2499938181078593594}
   - component: {fileID: 809870030938376896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 93020439385443056}
   - component: {fileID: 2355022182823052579}
   - component: {fileID: 8414190276026864874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,7 +1010,7 @@ GameObject:
   - component: {fileID: 5004232903751715071}
   - component: {fileID: 6358206989633679518}
   - component: {fileID: 7813834449508150773}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 5092946791236664549}
   - component: {fileID: 6774631890728697706}
   - component: {fileID: 4502001469913534834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

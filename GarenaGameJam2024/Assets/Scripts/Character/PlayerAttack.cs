@@ -66,4 +66,8 @@ public class PlayerAttack : MonoBehaviour
             isFinishAttack = true;
         }
     }
+    public void DisabledHitbox()
+    {
+        Hitbox.enabled = false;
+    }
 }

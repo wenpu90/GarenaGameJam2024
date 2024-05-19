@@ -57,10 +57,18 @@ public class PlayerController : MonoBehaviour
             player1Movement.Move(input.Player1Axes);
             if (input.Player1Jump) player1Movement.Jump();
         }
+        else
+        {
+            player1Movement.Move(0);
+        }
         if (!p2StopMovement && !p2.isDead)
         {
             player2Movement.Move(input.Player2Axes);
             if (input.Player2Jump) player2Movement.Jump();
+        }
+        else
+        {
+            player1Movement.Move(0);
         }
     }
 
@@ -71,13 +79,21 @@ public class PlayerController : MonoBehaviour
             if (!player1Movement.isJumping && !player1Movement.isMoving)
                 if (player1Attack.isFinishAttack && player1EnemyDectector.isTrigger) player1Attack.Attack();
         }
+        else
+        {
+            player1Attack.DisabledHitbox();
+        }
 
         if (!p2StopMovement && !p2.isDead)
         {
             if (!player2Movement.isJumping && !player2Movement.isMoving)
                 if (player2Attack.isFinishAttack && player2EnemyDectector.isTrigger) player2Attack.Attack();
         }
-  
+        else
+        {
+            player2Attack.DisabledHitbox();
+        }
+
     }
 
     private void Animation()

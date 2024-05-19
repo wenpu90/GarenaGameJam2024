@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Monster_Movement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed;
+    [SerializeField] public float moveSpeed;
     [SerializeField] private Rigidbody2D rigid;
     private void Awake()
     {
