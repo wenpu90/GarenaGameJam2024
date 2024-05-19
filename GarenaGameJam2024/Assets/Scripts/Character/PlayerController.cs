@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     private void Animation()
     {
-        if (!p1StopMovement && !p1.isDead)
+        if (!p1StopMovement)
         {
             if (p1.isDead) player1Animation.PlayDieAnimation();
             else if (player1Movement.isJumping) player1Animation.PlayJumpAnimation();
@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
             else player1Animation.PlayIdleAnimation();
         }
 
-        if (!p2StopMovement && !p2.isDead)
+        if (!p2StopMovement)
         {
             if (p2.isDead) player2Animation.PlayDieAnimation();
             else if (player2Movement.isJumping) player2Animation.PlayJumpAnimation();

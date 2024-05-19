@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     public Stat stat;
     private float currentHp;
     public bool isDead = false;
+    [SerializeField] private GameObject pos;
     private void Awake()
     {
         currentHp = stat.health;
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour
     }
     private void Resurrection()
     {
-        transform.position = new Vector3(0, 5, 0);
+        transform.position = pos.transform.position;
         isDead = false;
         currentHp = stat.health;
     }
