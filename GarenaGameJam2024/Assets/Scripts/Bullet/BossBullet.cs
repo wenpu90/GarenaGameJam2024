@@ -22,6 +22,7 @@ public class BossBullet : MonoBehaviour
         {
             var player = collision.GetComponent<Player>();
             if (player) player.TakeDamage(bulletDamage);
+            Destroy(gameObject);
         }
     }
 }

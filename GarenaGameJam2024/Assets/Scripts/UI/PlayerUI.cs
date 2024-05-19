@@ -14,16 +14,22 @@ public class PlayerUI : MonoBehaviour
     public TextMeshProUGUI fire;
     public TextMeshProUGUI water;
     public TextMeshProUGUI wood;
+    public TextMeshProUGUI item;
 
     public void UpdateHealth(float _health)
     {
-        hp.DOFillAmount(_health, 0.5f);
+        hp.DOFillAmount(_health * 100f, 0.5f);
     }
 
     public void UpdateElement(Player player)
     {
         fire.text = $"{player.stat.attack}";
-        water.text = $"{player.stat.health}";
-        wood.text = $"{player.stat.movementSpeed}";
+        water.text = $"{player.stat.movementSpeed}";
+        wood.text = $"{player.stat.health}";
+    }
+
+    public void UpdateItem()
+    {
+     
     }
 }

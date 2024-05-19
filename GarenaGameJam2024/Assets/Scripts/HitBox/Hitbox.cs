@@ -11,5 +11,9 @@ public class Hitbox : MonoBehaviour
             monster = collision.GetComponentInParent<Monster>();
             monster.TakeDamage(player.stat.attack);
         }
+        else if (collision.CompareTag("Boss"))
+        {
+            BossGamePlay.Instance.GetDamage(player.stat);
+        }
     }
 }
