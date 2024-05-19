@@ -88,6 +88,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss_Gameplay
       objectReference: {fileID: 0}
+    - target: {fileID: 5097042873521667233, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5949380531478027282, guid: 987af6676ba416f43b565f9258f7b6f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -235,6 +240,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7886342126019062532, guid: 5c55a6116127f6d42a4928e6627abc4e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c55a6116127f6d42a4928e6627abc4e, type: 3}
 --- !u!4 &6559317472481246923 stripped
@@ -266,11 +276,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GamePlay 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632553559675348110, guid: d99d7c08abdd0fa44a12d1d0e20a335d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4632553559675348111, guid: d99d7c08abdd0fa44a12d1d0e20a335d,
         type: 3}
