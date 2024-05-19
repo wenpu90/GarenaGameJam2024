@@ -26,6 +26,9 @@ public class BossGamePlay : MonoBehaviour
     public PlayerTower p1Tower;
     public PlayerTower p2Tower;
 
+    public GameObject p1Victory;
+    public GameObject p2Victory;
+
     public PlayerController playerController;
 
     public List<GameObject> maps = new List<GameObject>();
@@ -35,6 +38,7 @@ public class BossGamePlay : MonoBehaviour
     public bool isDead = false;
     public Image hpImage;
     public float bossMaxHp = 30;
+    public Player lastHitPlayer;
     public float HP {
         get
         {
@@ -120,32 +124,33 @@ public class BossGamePlay : MonoBehaviour
         }
     }
 
-    public void GetDamage(Stat stat)
+    public void GetDamage(Player player)
     {
         float damage = 0;
         switch (bossElement)
         {
             case Element.ElementType.Fire:
-                damage += stat.attack;
-                damage += (stat.movementSpeed * 2);
-                damage += stat.health / 2;
+                damage += player.stat.attack;
+                damage += (player.stat.movementSpeed * 2);
+                damage += player.stat.health / 2;
                 break;
             case Element.ElementType.Water:
-                damage += stat.attack / 2;
-                damage += stat.movementSpeed;
-                damage += stat.health * 2;
+                damage += player.stat.attack / 2;
+                damage += player.stat.movementSpeed;
+                damage += player.stat.health * 2;
                 break;
             case Element.ElementType.Wood:
-                damage += stat.attack * 2;
-                damage += stat.movementSpeed / 2;
-                damage += (stat.health / 2);
+                damage += player.stat.attack * 2;
+                damage += player.stat.movementSpeed / 2;
+                damage += (player.stat.health / 2);
                 break;
             case Element.ElementType.Normal:
-                damage += stat.attack;
-                damage += stat.health;
-                damage += stat.movementSpeed;
+                damage += player.stat.attack;
+                damage += player.stat.health;
+                damage += player.stat.movementSpeed;
                 break;
         }
+        lastHitPlayer = player;
         HP -= Mathf.Clamp(damage, 1, 100);
     }
 
@@ -153,15 +158,15 @@ public class BossGamePlay : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            p1Tower.Shoot(Element.ElementType.Fire, p1.stat);
+            p1Tower.Shoot(Element.ElementType.Fire, p1);
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
-            p1Tower.Shoot(Element.ElementType.Water, p1.stat);
+            p1Tower.Shoot(Element.ElementType.Water, p1);
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            p1Tower.Shoot(Element.ElementType.Wood, p1.stat);
+            p1Tower.Shoot(Element.ElementType.Wood, p1);
         }
     }
 
@@ -170,15 +175,15 @@ public class BossGamePlay : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            p2Tower.Shoot(Element.ElementType.Fire, p2.stat);
+            p2Tower.Shoot(Element.ElementType.Fire, p2);
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            p2Tower.Shoot(Element.ElementType.Water, p2.stat);
+            p2Tower.Shoot(Element.ElementType.Water, p2);
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            p2Tower.Shoot(Element.ElementType.Wood, p2.stat);
+            p2Tower.Shoot(Element.ElementType.Wood, p2);
         }
     }
 
@@ -191,6 +196,14 @@ public class BossGamePlay : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
+        if(lastHitPlayer == p1)
+        {
+            p1Victory.SetActive(true);
+        }
+        else
+        {
+            p2Victory.SetActive(true);
+        }
         Debug.Log("BossDead");
     }
 }

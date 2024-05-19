@@ -13,7 +13,7 @@ public class Hitbox : MonoBehaviour
         }
         else if (collision.CompareTag("Boss"))
         {
-            BossGamePlay.Instance.GetDamage(player.stat);
+            BossGamePlay.Instance.GetDamage(player);
         }
     }
 }

@@ -8,16 +8,16 @@ public class OrbBullet : MonoBehaviour
     public Element.ElementType elementType;
     public List<GameObject> orbs = new List<GameObject>();
     public float damage;
-    public Stat stat;
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {
         transform.DOMove(BossGamePlay.Instance.bossObject.position, 1f).SetEase(Ease.Flash).OnComplete(OnReached);
     }
 
-    public void Setup(Element.ElementType _elementType, Stat _stat)
+    public void Setup(Element.ElementType _elementType, Player _player)
     {
-        stat = _stat;
+        player = _player;
         elementType = _elementType;
         for (int i = 0; i < orbs.Count; i++)
         {
@@ -27,7 +27,7 @@ public class OrbBullet : MonoBehaviour
 
     void OnReached()
     {
-        BossGamePlay.Instance.GetDamage(stat);
+        BossGamePlay.Instance.GetDamage(player);
         BossGamePlay.Instance.ChangeElement(elementType);
         Destroy(gameObject);
     }

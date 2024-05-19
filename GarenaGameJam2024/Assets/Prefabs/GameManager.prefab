@@ -540,6 +540,21 @@ PrefabInstance:
       objectReference: {fileID: 2542756740343863583}
     - target: {fileID: -2677668198665886212, guid: 987af6676ba416f43b565f9258f7b6f9,
         type: 3}
+      propertyPath: bossMaxHp
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: -2677668198665886212, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: p1Victory
+      value: 
+      objectReference: {fileID: 8296648631472466360}
+    - target: {fileID: -2677668198665886212, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
+      propertyPath: p2Victory
+      value: 
+      objectReference: {fileID: 1741640541980311032}
+    - target: {fileID: -2677668198665886212, guid: 987af6676ba416f43b565f9258f7b6f9,
+        type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 4343916179405164472}

@@ -14,7 +14,7 @@ public class PlayerTower : MonoBehaviour
         transform.position = target.position;
     }
 
-    public void Shoot(Element.ElementType elementType,Stat stat)
+    public void Shoot(Element.ElementType elementType,Player player)
     {
         if(count > 0)
         {
@@ -26,7 +26,7 @@ public class PlayerTower : MonoBehaviour
             return;
         }
         OrbBullet ob =  Instantiate(orbBullet.gameObject, transform.position, Quaternion.identity).GetComponent<OrbBullet>();
-        ob.Setup(elementType, stat);
+        ob.Setup(elementType, player);
     }
 
     public void ShowElement(bool _active)

@@ -20,9 +20,10 @@ public class Element : MonoBehaviour
     {
         rigidbody2D.AddForce(Vector2.up * dropForce);
     }
-    public void SetupElement(ElementType elementType)
+    public void SetupElement(ElementType _elementType)
     {
-        orbs[(int)elementType].gameObject.SetActive(true);
+        elementType = _elementType;
+        orbs[(int)_elementType].gameObject.SetActive(true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
