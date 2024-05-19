@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 8087740774571963730}
   - component: {fileID: 497640410565568640}
   - component: {fileID: 4312766855704037307}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Square (1)
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 5792754278991176227}
   - component: {fileID: 7856962500064527361}
   - component: {fileID: 177281844547565455}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Square (3)
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 3392529694039382691}
   - component: {fileID: 7909564557815706883}
   - component: {fileID: 7039159614875693463}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Square (2)
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -842,6 +842,8 @@ MonoBehaviour:
   p2: {fileID: 0}
   p1Tower: {fileID: 0}
   p2Tower: {fileID: 0}
+  p1Victory: {fileID: 0}
+  p2Victory: {fileID: 0}
   playerController: {fileID: 0}
   maps:
   - {fileID: 2944818298646138592}
@@ -857,6 +859,7 @@ MonoBehaviour:
   isDead: 0
   hpImage: {fileID: 5346245526828689023}
   bossMaxHp: 30
+  lastHitPlayer: {fileID: 0}
 --- !u!82 &5202242802730175954
 AudioSource:
   m_ObjectHideFlags: 0
@@ -965,7 +968,7 @@ GameObject:
   - component: {fileID: 2053662477096713716}
   - component: {fileID: 436378195348822405}
   - component: {fileID: 2866249758900913109}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Square
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -1166,22 +1169,22 @@ PrefabInstance:
     - target: {fileID: 2284064008023151893, guid: a7a1aeac2f4d0b944858c7234bde1d5d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.64
+      value: -2.29
       objectReference: {fileID: 0}
     - target: {fileID: 2284064008510830681, guid: a7a1aeac2f4d0b944858c7234bde1d5d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.57
+      value: -2.22
       objectReference: {fileID: 0}
     - target: {fileID: 2284064008784574426, guid: a7a1aeac2f4d0b944858c7234bde1d5d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1499999
+      value: -1.7999998
       objectReference: {fileID: 0}
     - target: {fileID: 2284064009282603008, guid: a7a1aeac2f4d0b944858c7234bde1d5d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.92999995
+      value: -1.5799999
       objectReference: {fileID: 0}
     - target: {fileID: 5685811039946618392, guid: a7a1aeac2f4d0b944858c7234bde1d5d,
         type: 3}

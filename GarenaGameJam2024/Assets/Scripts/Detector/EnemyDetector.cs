@@ -9,10 +9,18 @@ public class EnemyDetector : MonoBehaviour
         {
             isTrigger = true;
         }
+        else if (collision.CompareTag("Boss"))
+        {
+            isTrigger = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
+        {
+            isTrigger = false;
+        }
+        else if (collision.CompareTag("Boss"))
         {
             isTrigger = false;
         }

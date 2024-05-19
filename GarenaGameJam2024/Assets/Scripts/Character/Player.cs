@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Stat defaultStat;
     public Stat stat;
     private float currentHp;
     public bool isDead = false;
@@ -13,6 +14,12 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         currentHp = stat.health;
+    }
+
+    void Start()
+    {
+        UpdateElement();
+        UpdateHealth();
     }
     [Button]
     public void TakeDamage(float damage)
