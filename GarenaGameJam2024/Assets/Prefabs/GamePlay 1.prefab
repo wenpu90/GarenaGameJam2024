@@ -665,7 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterBossStageTime: 60
   currentTime: 60
-  countdownText: {fileID: 0}
+  countdownText: {fileID: 7263124198298388956}
   ended: 0
 --- !u!1 &4632553559701542774
 GameObject:
