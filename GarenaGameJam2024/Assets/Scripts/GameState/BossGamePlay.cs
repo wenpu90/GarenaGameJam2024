@@ -2,9 +2,10 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class BossGamePlay : MonoBehaviour
 {
+    public UnityEvent enterBossStageEvent;
     public Element.ElementType bossElement;
     public KeyCode p1Cannon;
     public KeyCode p2Cannon;
@@ -21,6 +22,7 @@ public class BossGamePlay : MonoBehaviour
     {
         player1InTowerState = false;
         player2InTowerState = false;
+        enterBossStageEvent?.Invoke();
     }
     public void Update()
     {

@@ -11,7 +11,7 @@ public class Monster : MonoBehaviour
     public Action<Monster> OnDeadEvent = delegate { };
     private void Awake()
     {
-        elementType = (ElementType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ElementType)).Length);
+        elementType = (ElementType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ElementType)).Length - 1);
         Debug.Log(elementType);
         var sprite = GetComponent<SpriteRenderer>();
         switch (elementType)
