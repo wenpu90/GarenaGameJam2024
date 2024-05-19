@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.F1))
+        if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             StartBossFight();
         }

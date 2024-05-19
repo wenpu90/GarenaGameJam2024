@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossBullet : MonoBehaviour
 {
     public float bulletSpeed;
+    public float bulletDamage = 1f;
 
     void Awake()
     {
@@ -13,5 +14,14 @@ public class BossBullet : MonoBehaviour
     private void FixedUpdate()
     {
         transform.Translate(transform.right * bulletSpeed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            var player = collision.GetComponent<Player>();
+            if (player) player.TakeDamage(bulletDamage);
+        }
     }
 }

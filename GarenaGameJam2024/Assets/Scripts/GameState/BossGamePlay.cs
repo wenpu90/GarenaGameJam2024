@@ -18,11 +18,14 @@ public class BossGamePlay : MonoBehaviour
     public PlayerController playerController;
 
     public List<GameObject> maps = new List<GameObject>();
+    public List<Color> bossState = new List<Color>();
+    public SpriteRenderer spriteRenderer;
     private void Start()
     {
         player1InTowerState = false;
         player2InTowerState = false;
         enterBossStageEvent?.Invoke();
+        MonsterManager.Instance.DestroyAllMonster();
     }
     public void Update()
     {
@@ -64,6 +67,10 @@ public class BossGamePlay : MonoBehaviour
         for (int i = 0; i < maps.Count; i++)
         {
             maps[i].SetActive(i == (int)elementType);
+            if(i == (int)elementType)
+            {
+                spriteRenderer.color = bossState[i];
+            }   
         }
     }
 }

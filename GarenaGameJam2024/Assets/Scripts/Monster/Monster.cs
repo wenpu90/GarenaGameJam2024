@@ -41,7 +41,7 @@ public class Monster : MonoBehaviour
     {
         OnDeadEvent?.Invoke(this);
         MonsterManager.Instance.RandomSpawn();
-        Instantiate(explosionPrefab.gameObject);
+        Instantiate(explosionPrefab.gameObject, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision)

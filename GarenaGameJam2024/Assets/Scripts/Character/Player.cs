@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public bool isDead = false;
     [SerializeField] private GameObject pos;
     public PlayerUI playerUI;
+    private Vector3 presetScale;
     private void Awake()
     {
         currentHp = stat.health;
@@ -41,6 +42,8 @@ public class Player : MonoBehaviour
     }
     public void UpdateElement()
     {
+        transform.localScale = ( Vector3.one * 0.5f) * Mathf.Clamp(1,  stat.health, stat.health);
+        
         playerUI.UpdateElement(this);
     }
 }

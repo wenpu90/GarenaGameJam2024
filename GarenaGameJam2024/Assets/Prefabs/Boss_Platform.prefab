@@ -156,7 +156,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2284064008023151893}
-  - component: {fileID: 315207040}
   m_Layer: 0
   m_Name: Map_Fire
   m_TagString: Untagged
@@ -184,21 +183,6 @@ Transform:
   m_Father: {fileID: 5685811039946618392}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &315207040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2284064008023151882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7569511aaa5ebe4896834671ef4f825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  rotateSpeed: 3
-  shootInterval: 1
 --- !u!1 &2284064008510830686
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +228,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2284064008784574426}
-  - component: {fileID: 1725258219}
   m_Layer: 0
   m_Name: Map_Water
   m_TagString: Untagged
@@ -270,21 +253,6 @@ Transform:
   m_Father: {fileID: 5685811039946618392}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1725258219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2284064008784574427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7569511aaa5ebe4896834671ef4f825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  rotateSpeed: 3
-  shootInterval: 1
 --- !u!1 &2284064009282603009
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +262,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2284064009282603008}
-  - component: {fileID: 1462514848}
   m_Layer: 0
   m_Name: Map_Wood
   m_TagString: Untagged
@@ -320,21 +287,6 @@ Transform:
   m_Father: {fileID: 5685811039946618392}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1462514848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2284064009282603009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7569511aaa5ebe4896834671ef4f825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  rotateSpeed: 3
-  shootInterval: 1
 --- !u!1 &3554731370049567008
 GameObject:
   m_ObjectHideFlags: 0
