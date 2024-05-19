@@ -163,7 +163,7 @@ Transform:
   m_GameObject: {fileID: 5297794314753977983}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.24, y: -3.69, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5297794314119305952}
@@ -299,9 +299,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementType: 0
   stat:
-    attack: 0
-    health: 0
-    movementSpeed: 0
+    attack: 10
+    health: 35
+    movementSpeed: -10
   explosionPrefab: {fileID: 4741457099042057524, guid: 4b54e955d24aaec4a808a3c60b3b0911,
     type: 3}
 --- !u!114 &-2614502259946353236

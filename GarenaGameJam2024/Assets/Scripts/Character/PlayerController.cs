@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            player1Movement.Move(0);
+            player2Movement.Move(0);
         }
     }
 

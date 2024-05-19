@@ -1396,8 +1396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat:
-    attack: 1
-    health: 1
+    attack: 10
+    health: 100
     movementSpeed: 10
   isDead: 0
   pos: {fileID: 2030331300890937501}
@@ -1666,8 +1666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat:
-    attack: 1
-    health: 1
+    attack: 10
+    health: 100
     movementSpeed: 10
   isDead: 0
   pos: {fileID: 2030331300890937501}

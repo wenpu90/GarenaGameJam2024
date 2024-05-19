@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387d2a00d928e6249bd80c6e06bbe3d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7.09
+  moveSpeed: 0
   rigid: {fileID: 0}
 --- !u!50 &5297794314753977979
 Rigidbody2D:
@@ -226,9 +226,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementType: 0
   stat:
-    attack: 1
-    health: 3
-    movementSpeed: 0
+    attack: 10
+    health: 35
+    movementSpeed: 10
   explosionPrefab: {fileID: 4741457099042057524, guid: 4b54e955d24aaec4a808a3c60b3b0911,
     type: 3}
 --- !u!114 &2353570265157447971

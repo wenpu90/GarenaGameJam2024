@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
         if (isDead) return;
         currentHp -= damage;
         UpdateHealth();
-        if (currentHp < 0) Die();
+        if (currentHp <= 0) Die();
     }
     private async void Die() 
     {
