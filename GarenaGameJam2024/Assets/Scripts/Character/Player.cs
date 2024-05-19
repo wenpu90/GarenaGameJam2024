@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,14 +8,17 @@ public class Player : MonoBehaviour
     private float currentHp;
     public bool isDead = false;
     [SerializeField] private GameObject pos;
+    public PlayerUI playerUI;
     private void Awake()
     {
         currentHp = stat.health;
     }
+    [Button]
     public void TakeDamage(float damage)
     {
         if (isDead) return;
         currentHp -= damage;
+        UpdateHealth();
         if (currentHp < 0) Die();
     }
     private async void Die() 
@@ -28,5 +32,15 @@ public class Player : MonoBehaviour
         transform.position = pos.transform.position;
         isDead = false;
         currentHp = stat.health;
+        UpdateHealth();
+    }
+
+    public void UpdateHealth()
+    {
+        playerUI.UpdateHealth(currentHp / stat.health);
+    }
+    public void UpdateElement()
+    {
+        playerUI.UpdateElement(this);
     }
 }

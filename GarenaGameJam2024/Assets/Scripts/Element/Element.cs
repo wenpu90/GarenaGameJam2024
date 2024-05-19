@@ -37,7 +37,6 @@ public class Element : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
         if (!isOnFloor) return;
         if (collision.TryGetComponent(out Player player))
         {
@@ -53,6 +52,7 @@ public class Element : MonoBehaviour
                     player.stat.health += elementPoint;
                     break;
             }
+            player.UpdateElement();
             audioSource.Play();
             orbs.ForEach(n => n.gameObject.SetActive(false));
             GetComponent<BoxCollider2D>().enabled = false;

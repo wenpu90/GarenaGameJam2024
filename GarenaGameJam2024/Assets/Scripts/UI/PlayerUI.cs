@@ -17,8 +17,13 @@ public class PlayerUI : MonoBehaviour
 
     public void UpdateHealth(float _health)
     {
-
+        hp.DOFillAmount(_health, 0.5f);
     }
 
-
+    public void UpdateElement(Player player)
+    {
+        fire.text = $"{player.stat.attack}";
+        water.text = $"{player.stat.health}";
+        wood.text = $"{player.stat.movementSpeed}";
+    }
 }

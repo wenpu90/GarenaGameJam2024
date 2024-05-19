@@ -29,7 +29,7 @@ public class MonsterManager : MonoBehaviour
     }
     public void RandomSpawn()
     {
-        Debug.Log("RandomSpawn");
+        //Debug.Log("RandomSpawn");
         int index = randomSpawn.GetRandomIndex();
         var monster = randomSpawn.GetFace(index) > 0 ? monster1 : monster2;
         Instantiate(monster, randomSpawn.GetPosition(index), Quaternion.identity);

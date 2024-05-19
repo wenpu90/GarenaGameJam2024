@@ -5,6 +5,11 @@ using UnityEngine;
 public class BossBullet : MonoBehaviour
 {
     public float bulletSpeed;
+
+    void Awake()
+    {
+        Destroy(gameObject, 3f);
+    }
     private void FixedUpdate()
     {
         transform.Translate(transform.right * bulletSpeed * Time.deltaTime);

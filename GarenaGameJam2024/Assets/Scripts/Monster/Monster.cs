@@ -9,6 +9,7 @@ public class Monster : MonoBehaviour
     public Element.ElementType elementType;
     public Stat stat;
     public Action<Monster> OnDeadEvent = delegate { };
+    public GameObject explosionPrefab;
     private void Awake()
     {
         elementType = (ElementType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ElementType)).Length - 1);
@@ -40,6 +41,7 @@ public class Monster : MonoBehaviour
     {
         OnDeadEvent?.Invoke(this);
         MonsterManager.Instance.RandomSpawn();
+        Instantiate(explosionPrefab.gameObject);
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision)

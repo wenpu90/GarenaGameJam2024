@@ -228,6 +228,8 @@ MonoBehaviour:
     attack: 0
     health: 0
     movementSpeed: 0
+  explosionPrefab: {fileID: 4741457099042057524, guid: 4b54e955d24aaec4a808a3c60b3b0911,
+    type: 3}
 --- !u!114 &-2614502259946353236
 MonoBehaviour:
   m_ObjectHideFlags: 0

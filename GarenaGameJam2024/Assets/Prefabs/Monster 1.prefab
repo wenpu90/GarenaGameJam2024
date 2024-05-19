@@ -225,9 +225,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementType: 0
   stat:
-    attack: 1.07
-    health: 13.34
+    attack: 1
+    health: 3
     movementSpeed: 0
+  explosionPrefab: {fileID: 4741457099042057524, guid: 4b54e955d24aaec4a808a3c60b3b0911,
+    type: 3}
 --- !u!114 &2353570265157447971
 MonoBehaviour:
   m_ObjectHideFlags: 0
